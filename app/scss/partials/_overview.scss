@@ -1,0 +1,58 @@
+.overview-links {
+    width: 100%;
+    @include susy-clearfix;
+    margin-bottom: 3rem;
+    .overview-links__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        @include container;
+        .overview-links__item {
+            margin-bottom: 1rem;
+            @include bp(phablet) {
+                @include gallery(6 of 12);
+            }
+            @include bp(laptop) {
+                @include gallery(4 of 12);
+            }
+            a {
+                display: block;
+                border-width: 1px;
+                border-radius: 3px;
+                border-style: solid;
+                border-color: map-get($colors, purple-dark);
+                background: map-get($colors, purple-dark);
+                @include shadow-light;
+                height: 15rem;
+                &:hover {
+                    border-color: map-get($colors, purple);
+                    background: map-get($colors, purple);
+                }
+                > div {
+                    @include span(6 of 12);
+                    height: 100%;
+                    &:last-child {
+                        @include last;
+                    }
+                }
+                .overview-links__text {
+                    color: white;
+                    padding: 1rem;
+                }
+                .overview-links__img {
+                    .svg-container {
+                        height: 100%;
+                        position: relative;
+                        svg {
+                            position: absolute;
+                            bottom: 1rem;
+                            right: 1rem;
+                            width: 8rem;
+                            height: 8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

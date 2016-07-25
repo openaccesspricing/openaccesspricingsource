@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Open Access Pricing Optimization Study: {{pageId}}</title>
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+    <script src="//code.highcharts.com/modules/data.js"></script>
+    <script src="//code.highcharts.com/modules/drilldown.js"></script>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        {{> header}} {{#if isQuestion}}
+        <div class="subheader-container">
+            <div class="subheader">{{pageName}}</div>
+        </div>
+        {{else}} {{> hero}} {{/if}}
+        <div class="content">
+            {{#if index}} {{> overview}} {{/if}}
+            
+            {{#if q1Discipline}} {{> q1disciplinedash}} {{/if}}
+            {{#if q1Region}} {{> q1regiondash}} {{/if}}
+            {{#if q1ImpactFactor}} {{> q1impactfactordash}} {{/if}}
+            
+            {{#if q2Discipline}} {{> q2disciplinedash}} {{/if}}
+            {{#if q2Region}} {{> q2regiondash}} {{/if}}
+            {{#if q2ImpactFactor}} {{> q2impactfactordash}} {{/if}}
+            
+            {{#if q3Discipline}} {{> q3disciplinedash}} {{/if}}
+            {{#if q3Region}} {{> q3regiondash}} {{/if}}
+            
+            {{#if q4Discipline}} {{> q4disciplinedash}} {{/if}}
+            {{#if q4Region}} {{> q4regiondash}} {{/if}}
+            
+            {{#if q5Discipline}} {{> q5disciplinedash}} {{/if}}
+            {{#if q5Region}} {{> q5regiondash}} {{/if}}
+            
+            {{#if q6Discipline}} {{> q6disciplinedash}} {{/if}}
+            {{#if q6Region}} {{> q6regiondash}} {{/if}}
+            {{#if q6ImpactFactor}} {{> q6impactfactordash}} {{/if}}
+        </div>
+
+        {{> footer}}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.nav-tabs > li > span {
+    margin-right: 2px;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    border-radius: 0 0 0 0;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.filter-buttons {
+    @include susy-clearfix;
+    .filter-button {
+        display: inline-block;
+        margin: 0 0 1rem 0.5rem;
+    }
+}
+p a {
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: map-get($colors, purple);
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+    }
+    &:hover {
+        text-decoration: none;
+        &:after {
+            width: 0%;
+        }
+    }
+}

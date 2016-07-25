@@ -1,0 +1,96 @@
+[{
+            "pageId": "index",
+            "pageName": "Overview",
+            "isQuestion": false,    
+            "index": true
+},
+        {
+            "pageId": "q1-discipline",
+            "pageName": "Acceptable APCs: Discipline",
+            "isQuestion": true,
+            "q1Discipline": true
+},
+        {
+            "pageId": "q1-region",
+            "pageName": "Acceptable APCs: Region",
+            "isQuestion": true,
+            "q1Region": true
+},
+        {
+            "pageId": "q1-impact-factor",
+            "pageName": "Acceptable APCs: Impact Factor",
+            "isQuestion": true,
+            "q1ImpactFactor": true
+},
+        {
+            "pageId": "q2-discipline",
+            "pageName": "Price Memory: Discipline",
+            "isQuestion": true,
+            "q2Discipline": true
+},
+        {
+            "pageId": "q2-region",
+            "pageName": "Price Memory: Region",
+            "isQuestion": true,
+            "q2Region": true
+},
+        {
+            "pageId": "q2-impact-factor",
+            "pageName": "Price Memory: Impact Factor",
+            "isQuestion": true,
+            "q2ImpactFactor": true
+},
+        {
+            "pageId": "q3-discipline",
+            "pageName": "Open Access Mandates: Discipline",
+            "isQuestion": true,
+            "q3Discipline": true
+},
+        {
+            "pageId": "q3-region",
+            "pageName": "Open Access Mandates: Region",
+            "isQuestion": true,
+            "q3Region": true
+},
+        {
+            "pageId": "q4-discipline",
+            "pageName": "Publishing Frequency: Discipline",
+            "isQuestion": true,
+            "q4Discipline": true
+},
+        {
+            "pageId": "q4-region",
+            "pageName": "Publishing Frequency: Region",
+            "isQuestion": true,
+            "q4Region": true
+},
+        {
+            "pageId": "q5-discipline",
+            "pageName": "Open Access Only Journal Consideration: Discipline",
+            "isQuestion": true,
+            "q5Discipline": true
+},
+        {
+            "pageId": "q5-region",
+            "pageName": "Open Access Only Journal Consideration: Region",
+            "isQuestion": true,
+            "q5Region": true
+},
+        {
+            "pageId": "q6-discipline",
+            "pageName": "Open Access Uptake: Discipline",
+            "isQuestion": true,
+            "q6Discipline": true
+},
+        {
+            "pageId": "q6-region",
+            "pageName": "Open Access Uptake: Region",
+            "isQuestion": true,
+            "q6Region": true
+},
+        {
+            "pageId": "q6-impact-factor",
+            "pageName": "Open Access Uptake: Impact Factor",
+            "isQuestion": true,
+            "q6ImpactFactor": true
+}]
