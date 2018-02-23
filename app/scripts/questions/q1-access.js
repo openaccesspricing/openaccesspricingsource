@@ -77,76 +77,51 @@ $(function() {
         },
 
         series: [{
-            name: '$2500',
-            stack: '$2500',
-            color: '#032977',
-            data: [{
-                name: 'High impact',
-                y: 26.77
+                name: '$2500',
+                data: [{
+                    name: 'OnlineOpen',
+                    y: 14.89
+                }],
+                stack: '$2500',
+                color: '#032977'
             }, {
-                name: 'Medium impact',
-                y: 20.61
+                name: '$3000',
+                data: [{
+                    name: 'OnlineOpen',
+                    y: 8.35
+                }],
+                stack: '$3000',
+                color: '#A0C7E5'
+            },
+            //LIFE SCIENCES
+            {
+                name: '$3500',
+                data: [{
+                    name: 'OnlineOpen',
+                    y: 6.04
+                }],
+                stack: '$3500',
+                color: '#1D5C56'
             }, {
-                name: 'Low impact',
-                y: 8.70
-            }]
-        }, {
-            name: '$3000',
-            stack: '$3000',
-            color: '#A0C7E5',
-            data: [{
-                name: 'High impact',
-                y: 19.69
-            }, {
-                name: 'Medium impact',
-                y: 16.79
-            }, {
-                name: 'Low impact',
-                y: 8.70
-            }]
-        }, {
-            name: '$3500',
-            stack: '$3500',
-            color: '#1D5C56',
-            data: [{
-                name: 'High impact',
-                y: 9.45
-            }, {
-                name: 'Medium impact',
-                y: 9.16
-            }, {
-                name: 'Low impact',
-                y: 4.35
-            }]
-        }, {
-            name: '$4000',
-            stack: '$4000',
-            color: '#C6DE8C',
-            data: [{
-                name: 'High impact',
-                y: 8.66
-            }, {
-                name: 'Medium impact',
-                y: 3.82
-            }, {
-                name: 'Low impact',
-                y: 4.35
-            }]
-        }, {
-            name: '$4500',
-            stack: '$4500',
-            color: '#800049',
-            data: [{
-                name: 'High impact',
-                y: 3.94
-            }, {
-                name: 'Medium impact',
-                y: 2.29
-            }, {
-                name: 'Low impact',
-                y: 4.35
-            }]
-        }]
+                name: '$4000',
+                data: [{
+                    name: 'OnlineOpen',
+                    y: 3.64
+                }],
+                stack: '$4000',
+                color: '#C6DE8C'
+            },
+            //PHYSICAL SCIENCES
+            {
+                name: '$4500',
+                data: [{
+                    name: 'OnlineOpen',
+                    y: 2.81
+                }],
+                stack: '$4500',
+                color: '#800049'
+            }
+        ]
 
     });
 });

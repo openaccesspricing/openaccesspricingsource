@@ -23,6 +23,12 @@
             "q1ImpactFactor": true
 },
         {
+            "pageId": "q1-access",
+            "pageName": "Acceptable APCs: Online Open",
+            "isQuestion": true,
+            "q1Access": true
+},
+        {
             "pageId": "q2-discipline",
             "pageName": "Price Memory: Discipline",
             "isQuestion": true,
@@ -66,13 +72,13 @@
 },
         {
             "pageId": "q5-discipline",
-            "pageName": "Open Access Only Journal Consideration: Discipline",
+            "pageName": "Publishing Choice: Discipline",
             "isQuestion": true,
             "q5Discipline": true
 },
         {
             "pageId": "q5-region",
-            "pageName": "Open Access Only Journal Consideration: Region",
+            "pageName": "Publishing Choice: Region",
             "isQuestion": true,
             "q5Region": true
 },

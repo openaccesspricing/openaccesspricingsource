@@ -32,7 +32,7 @@ p a {
         transition-duration: 0.5s;
         transition-timing-function: ease;
     }
-    &:hover {
+    &:hover, &:focus {
         text-decoration: none;
         &:after {
             width: 0%;

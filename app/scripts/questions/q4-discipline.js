@@ -105,6 +105,7 @@ $(function() {
             //HEALTH SCIENCES
             {
                 name: 'Health Sciences<br><b>Open Access</b>',
+                id: 'HS',
                 data: [{
                     name: '2013',
                     y: 674,
@@ -126,6 +127,7 @@ $(function() {
                 color: '#032977'
             }, {
                 name: 'Health Sciences<br><b>Not Open</b>',
+                linkedTo: 'HS',
                 data: [{
                     name: '2013',
                     y: 2339,
@@ -149,6 +151,7 @@ $(function() {
             //LIFE SCIENCES
             {
                 name: 'Life Sciences<br><b>Open Access</b>',
+        id:'LS',
                 data: [{
                     name: '2013',
                     y: 458,
@@ -170,6 +173,7 @@ $(function() {
                 color: '#1D5C56'
             }, {
                 name: 'Life Sciences<br><b>Not Open</b>',
+        linkedTo:'LS',
                 data: [{
                     name: '2013',
                     y: 1401,
@@ -193,6 +197,7 @@ $(function() {
             //PHYSICAL SCIENCES
             {
                 name: 'Physical Sciences<br><b>Open Access</b>',
+        id:'PS',
                 data: [{
                     name: '2013',
                     y: 446,
@@ -214,6 +219,7 @@ $(function() {
                 color: '#800049'
             }, {
                 name: 'Physical Sciences<br><b>Not Open</b>',
+        linkedTo:'PS',
                 data: [{
                     name: '2013',
                     y: 2635,
@@ -237,6 +243,7 @@ $(function() {
             //SOCIAL SCIENCE & HUMANITIES
             {
                 name: 'Social Sciences & Humanities<br><b>Open Access</b>',
+        id:'SSH',
                 data: [{
                     name: '2013',
                     y: 422,
@@ -258,6 +265,7 @@ $(function() {
                 color: '#E55800'
             }, {
                 name: 'Social Sciences & Humanities<br><b>Not Open</b>',
+        linkedTo:'SSH',
                 data: [{
                     name: '2013',
                     y: 1581,

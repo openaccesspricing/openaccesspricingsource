@@ -1,9 +1,9 @@
 $(function() {
-    
+
     var button = document.getElementsByClassName('optionbutton');
-    
+
     for (i = 0; i < button.length; i++) {
-        button[i].onclick = function () {
+        button[i].onclick = function() {
             for (j = 0; j < button.length; j++) {
                 button[j].classList.remove("active");
             };
@@ -11,33 +11,33 @@ $(function() {
         }
 
     }
-    
-    $('#percent').click(function () {
+
+    $('#percent').click(function() {
         var chart = $('#container').highcharts(),
             s = chart.series,
             sLen = s.length;
-        
-        for(var k =0; k < sLen; k++){
+
+        for (var k = 0; k < sLen; k++) {
             s[k].update({
-                stacking: 'percent'   
-            }, false);   
+                stacking: 'percent'
+            }, false);
         }
         chart.redraw();
     });
-    
-    $('#normal').click(function () {
+
+    $('#normal').click(function() {
         var chart = $('#container').highcharts(),
             s = chart.series,
             sLen = s.length;
-        
-        for(var i =0; i < sLen; i++){
+
+        for (var i = 0; i < sLen; i++) {
             s[i].update({
-                stacking: 'normal'   
-            }, false);   
+                stacking: 'normal'
+            }, false);
         }
         chart.redraw();
     });
-    
+
     $('#container').highcharts({
 
         chart: {
@@ -105,6 +105,7 @@ $(function() {
             //Africa & Middle East
             {
                 name: 'Africa & Middle East<br><b>Open Access</b>',
+                id: 'AME',
                 data: [{
                     name: '2013',
                     y: 288,
@@ -122,6 +123,7 @@ $(function() {
                 color: '#032977'
             }, {
                 name: 'Africa & Middle East<br><b>Not Open</b>',
+                linkedTo: 'AME',
                 data: [{
                     name: '2013',
                     y: 964,
@@ -141,6 +143,7 @@ $(function() {
             //Asia
             {
                 name: 'Asia<br><b>Open Access</b>',
+                id: 'AS',
                 data: [{
                     name: '2013',
                     y: 530,
@@ -158,6 +161,7 @@ $(function() {
                 color: '#1D5C56'
             }, {
                 name: 'Asia<br><b>Not Open</b>',
+                linkedTo: 'AS',
                 data: [{
                     name: '2013',
                     y: 1917,
@@ -177,6 +181,7 @@ $(function() {
             //Australasia
             {
                 name: 'Australasia<br><b>Open Access</b>',
+                id: 'AU',
                 data: [{
                     name: '2013',
                     y: 118,
@@ -194,6 +199,7 @@ $(function() {
                 color: '#800049'
             }, {
                 name: 'Australasia<br><b>Not Open</b>',
+                linkedTo: 'AU',
                 data: [{
                     name: '2013',
                     y: 448,
@@ -213,6 +219,7 @@ $(function() {
             //Central & South America
             {
                 name: 'Central & South America<br><b>Open Access</b>',
+                id: 'CSA',
                 data: [{
                     name: '2013',
                     y: 193,
@@ -230,6 +237,7 @@ $(function() {
                 color: '#E55800'
             }, {
                 name: 'Central & South America<br><b>Not Open</b>',
+                linkedTo: 'CSA',
                 data: [{
                     name: '2013',
                     y: 576,
@@ -249,6 +257,7 @@ $(function() {
             //Asia
             {
                 name: 'Europe<br><b>Open Access</b>',
+                id: 'EU',
                 data: [{
                     name: '2013',
                     y: 727,
@@ -266,6 +275,7 @@ $(function() {
                 color: '#075B81'
             }, {
                 name: 'Europe<br><b>Not Open</b>',
+                linkedTo: 'EU',
                 data: [{
                     name: '2013',
                     y: 3246,
@@ -285,6 +295,7 @@ $(function() {
             //Asia
             {
                 name: 'North America<br><b>Open Access</b>',
+                id: 'NA',
                 data: [{
                     name: '2013',
                     y: 181,
@@ -302,6 +313,7 @@ $(function() {
                 color: '#522464'
             }, {
                 name: 'North America<br><b>Not Open</b>',
+                linkedTo: 'NA',
                 data: [{
                     name: '2013',
                     y: 989,
